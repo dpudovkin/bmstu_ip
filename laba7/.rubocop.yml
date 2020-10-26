@@ -1,0 +1,14 @@
+Rails:
+  Enabled: true
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Documentation:
+  Enabled: false
+
+Metrics/LineLength:
+    Max: 120
+
+Metrics/MethodLength:
+  Max: 30
