@@ -3,6 +3,7 @@
 require 'minitest/autorun'
 require_relative 'main.rb'
 
+# TestFunction class is responsible for testing
 class TestFunction < Minitest::Test
   def setup
     @max_string_size = 30
@@ -11,6 +12,7 @@ class TestFunction < Minitest::Test
     @extra = %w[e E r t U]
   end
 
+  # testing with string generating
   def test_1
     @test_count.times do |_|
       @file_f = File.open('f.txt', 'w+')
@@ -19,9 +21,9 @@ class TestFunction < Minitest::Test
       text_g = @mas.join("\n")
       @mas.map! do |item|
         rand(5).times { |_| item.insert(rand(item.length - 1), @extra[rand(@extra.length)]) }
-        item.reverse
+        item
       end
-      @file_f.write(@mas.join("\n"))
+      @file_f.write(@mas.reverse.join("\n"))
       foo(@file_f, @file_g, false)
       @file_g.seek(File::SEEK_SET)
       assert_equal(text_g.strip, @file_g.read.strip)
@@ -30,15 +32,16 @@ class TestFunction < Minitest::Test
     end
   end
 
+  # predefined testing
   def test_2
     @file_f = File.open('f.txt', 'w+')
     @file_g = File.open('g.txt', 'w+')
-    text_f="ffs\ngdEf\nUef\ndgd\nrtFs"
-    text_g ="sff\nfdg\nf\dgd\nsF"
+    text_f = "ffs\ngdEf\nUef\ndgd\nrtFs"
+    text_g = "Fs\ndgd\nf\ngdf\nffs"
     @file_f.write text_f
     foo(@file_f, @file_g, false)
     @file_g.seek(File::SEEK_SET)
-    assert_equal(text_g,@file_g.read.strip)
+    assert_equal(text_g, @file_g.read.strip)
     @file_f.close
     @file_g.close
   end

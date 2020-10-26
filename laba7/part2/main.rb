@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# Sym class is character class
 class Sym
   def initialize(value)
     @value = value
@@ -16,6 +17,7 @@ class Sym
   end
 end
 
+# FontSym class is character class with font and code
 class FontSym < Sym
   def initialize(value, font)
     super value

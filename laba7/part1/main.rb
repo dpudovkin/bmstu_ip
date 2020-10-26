@@ -5,8 +5,8 @@ def generate_str(len)
   (1...len).map { characters[rand(characters.length - 1)] }.join('')
 end
 
-def foo(f, g, generate = true)
-  rand(10).times { |_| f.write generate_str(rand(20)).concat("\n") } if generate
-  f.seek(File::SEEK_SET)
-  f.each { |line| g.write line.gsub(/[eErtU\n]/, '').reverse.concat("\n") }
+def foo(file_f, file_g, generate = true)
+  rand(2..11).times { |_| file_f.write generate_str(rand(20)).concat("\n") } if generate
+  file_f.seek(File::SEEK_SET)
+  file_f.reverse_each { |line| file_g.write line.gsub(/[eErtU\n]/, '').concat("\n") }
 end
