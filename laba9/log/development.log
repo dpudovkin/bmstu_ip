@@ -1,0 +1,351 @@
+Started GET "/" for 127.0.0.1 at 2020-11-22 22:47:26 +0300
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/dima/.rvm/gems/ruby-2.7.1/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/dima/.rvm/gems/ruby-2.7.1/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 6.5ms | Allocations: 407)
+Completed 200 OK in 16ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 2454)
+
+
+Started GET "/number/input" for 127.0.0.1 at 2020-11-22 22:47:33 +0300
+Processing by NumberController#input as HTML
+  Rendering number/input.html.erb within layouts/application
+  Rendered number/input.html.erb within layouts/application (Duration: 2.8ms | Allocations: 2242)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 3563)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     6:   <P>Взаимно дружественных чисел нет</P>
+     7: <% else %>
+     8:   <table>
+     9:     <% @result.each do |v| %>
+    10:       <tr>
+    11:         <td><%= v[0] %></td>
+    12:         <td><%= v[1] %></td>
+  
+app/views/number/input.html.erb:9
+Started GET "/number/input" for 127.0.0.1 at 2020-11-22 22:48:55 +0300
+Processing by NumberController#input as HTML
+  Rendering number/input.html.erb within layouts/application
+  Rendered number/input.html.erb within layouts/application (Duration: 1.1ms | Allocations: 383)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/dima/Documents/bmstu_ip/laba9/public/packs
+[Webpacker] Hash: 15d1bb7b54cf6326b9ba
+Version: webpack 4.44.2
+Time: 1531ms
+Built at: 11/22/2020 10:48:59 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-9afcbb5693aa87623e69.js    124 KiB  application  [emitted] [immutable]  application
+js/application-9afcbb5693aa87623e69.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-9afcbb5693aa87623e69.js js/application-9afcbb5693aa87623e69.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 749 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 3752ms (Views: 3750.8ms | ActiveRecord: 0.0ms | Allocations: 18420)
+
+
+Started GET "/number/view.json?number=1%202%203%204%205&commit=%D0%A0%D0%B0%D1%81%D1%81%D1%87%D0%B8%D1%82%D0%B0%D1%82%D1%8C" for 127.0.0.1 at 2020-11-22 22:49:11 +0300
+Processing by NumberController#view as JSON
+  Parameters: {"number"=>"1 2 3 4 5", "commit"=>"Рассчитать"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 500)
+
+
+Started GET "/number/view.json?number=1%202%203%204%205&commit=%D0%A0%D0%B0%D1%81%D1%81%D1%87%D0%B8%D1%82%D0%B0%D1%82%D1%8C" for 127.0.0.1 at 2020-11-22 22:49:12 +0300
+Processing by NumberController#view as JSON
+  Parameters: {"number"=>"1 2 3 4 5", "commit"=>"Рассчитать"}
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 466)
+
+
+Started GET "/number/view.json?number=1%202%203%204%205&commit=%D0%A0%D0%B0%D1%81%D1%81%D1%87%D0%B8%D1%82%D0%B0%D1%82%D1%8C" for 127.0.0.1 at 2020-11-22 22:49:12 +0300
+Processing by NumberController#view as JSON
+  Parameters: {"number"=>"1 2 3 4 5", "commit"=>"Рассчитать"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 452)
+
+
+Started GET "/number/view.json?number=1%202%203%204%205&commit=%D0%A0%D0%B0%D1%81%D1%81%D1%87%D0%B8%D1%82%D0%B0%D1%82%D1%8C" for 127.0.0.1 at 2020-11-22 22:49:12 +0300
+Processing by NumberController#view as JSON
+  Parameters: {"number"=>"1 2 3 4 5", "commit"=>"Рассчитать"}
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 458)
+
+
+Started GET "/number/view.json?number=1%202%203%204%205&commit=%D0%A0%D0%B0%D1%81%D1%81%D1%87%D0%B8%D1%82%D0%B0%D1%82%D1%8C" for 127.0.0.1 at 2020-11-22 22:49:12 +0300
+Processing by NumberController#view as JSON
+  Parameters: {"number"=>"1 2 3 4 5", "commit"=>"Рассчитать"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 456)
+
+
+Started GET "/number/view.json" for 127.0.0.1 at 2020-11-22 22:49:19 +0300
+Processing by NumberController#view as JSON
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 447)
+
+
+Started GET "/number/view.json?number=60&commit=%D0%A0%D0%B0%D1%81%D1%81%D1%87%D0%B8%D1%82%D0%B0%D1%82%D1%8C" for 127.0.0.1 at 2020-11-22 23:00:39 +0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by NumberController#view as JSON
+  Parameters: {"number"=>"60", "commit"=>"Рассчитать"}
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 4458)
+
+
+Started GET "/number/view.json?number=60&commit=%D0%A0%D0%B0%D1%81%D1%81%D1%87%D0%B8%D1%82%D0%B0%D1%82%D1%8C" for 127.0.0.1 at 2020-11-22 23:00:40 +0300
+Processing by NumberController#view as JSON
+  Parameters: {"number"=>"60", "commit"=>"Рассчитать"}
+Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 4287)
+
+
+Started GET "/number/view.json?number=60&commit=%D0%A0%D0%B0%D1%81%D1%81%D1%87%D0%B8%D1%82%D0%B0%D1%82%D1%8C" for 127.0.0.1 at 2020-11-22 23:00:40 +0300
+Processing by NumberController#view as JSON
+  Parameters: {"number"=>"60", "commit"=>"Рассчитать"}
+Completed 200 OK in 21ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 4286)
+
+
+Started GET "/number/view.json?number=60&commit=%D0%A0%D0%B0%D1%81%D1%81%D1%87%D0%B8%D1%82%D0%B0%D1%82%D1%8C" for 127.0.0.1 at 2020-11-22 23:00:40 +0300
+Processing by NumberController#view as JSON
+  Parameters: {"number"=>"60", "commit"=>"Рассчитать"}
+Completed 200 OK in 21ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 4299)
+
+
+Started GET "/number/view.json?number=60&commit=%D0%A0%D0%B0%D1%81%D1%81%D1%87%D0%B8%D1%82%D0%B0%D1%82%D1%8C" for 127.0.0.1 at 2020-11-22 23:00:40 +0300
+Processing by NumberController#view as JSON
+  Parameters: {"number"=>"60", "commit"=>"Рассчитать"}
+Completed 200 OK in 24ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 4289)
+
+
+Started GET "/number/view.json?number=60&commit=%D0%A0%D0%B0%D1%81%D1%81%D1%87%D0%B8%D1%82%D0%B0%D1%82%D1%8C" for 127.0.0.1 at 2020-11-22 23:00:58 +0300
+Processing by NumberController#view as JSON
+  Parameters: {"number"=>"60", "commit"=>"Рассчитать"}
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 4292)
+
+
+Started GET "/number/view.json?number=60&commit=%D0%A0%D0%B0%D1%81%D1%81%D1%87%D0%B8%D1%82%D0%B0%D1%82%D1%8C" for 127.0.0.1 at 2020-11-22 23:00:58 +0300
+Processing by NumberController#view as JSON
+  Parameters: {"number"=>"60", "commit"=>"Рассчитать"}
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 4287)
+
+
+Started GET "/number/view.json?number=60&commit=%D0%A0%D0%B0%D1%81%D1%81%D1%87%D0%B8%D1%82%D0%B0%D1%82%D1%8C" for 127.0.0.1 at 2020-11-22 23:00:59 +0300
+Processing by NumberController#view as JSON
+  Parameters: {"number"=>"60", "commit"=>"Рассчитать"}
+Completed 200 OK in 8ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 4305)
+
+
+Started GET "/number/view.json?number=60&commit=%D0%A0%D0%B0%D1%81%D1%81%D1%87%D0%B8%D1%82%D0%B0%D1%82%D1%8C" for 127.0.0.1 at 2020-11-22 23:01:14 +0300
+Processing by NumberController#view as JSON
+  Parameters: {"number"=>"60", "commit"=>"Рассчитать"}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 4289)
+
+
+Started GET "/number/view.json?number=60&commit=%D0%A0%D0%B0%D1%81%D1%81%D1%87%D0%B8%D1%82%D0%B0%D1%82%D1%8C" for 127.0.0.1 at 2020-11-22 23:04:14 +0300
+Processing by NumberController#view as JSON
+  Parameters: {"number"=>"60", "commit"=>"Рассчитать"}
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 4296)
+
+
+Started GET "/number/view.json?number=60&commit=%D0%A0%D0%B0%D1%81%D1%81%D1%87%D0%B8%D1%82%D0%B0%D1%82%D1%8C" for 127.0.0.1 at 2020-11-22 23:04:15 +0300
+Processing by NumberController#view as JSON
+  Parameters: {"number"=>"60", "commit"=>"Рассчитать"}
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 4285)
+
+
+Started GET "/number/view.json?number=60&commit=%D0%A0%D0%B0%D1%81%D1%81%D1%87%D0%B8%D1%82%D0%B0%D1%82%D1%8C" for 127.0.0.1 at 2020-11-22 23:04:15 +0300
+Processing by NumberController#view as JSON
+  Parameters: {"number"=>"60", "commit"=>"Рассчитать"}
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 4285)
+
+
+Started GET "/number/view.json?number=60&commit=%D0%A0%D0%B0%D1%81%D1%81%D1%87%D0%B8%D1%82%D0%B0%D1%82%D1%8C" for 127.0.0.1 at 2020-11-22 23:04:15 +0300
+Processing by NumberController#view as JSON
+  Parameters: {"number"=>"60", "commit"=>"Рассчитать"}
+Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 4295)
+
+
+Started GET "/number/input" for 127.0.0.1 at 2020-11-22 23:04:16 +0300
+Processing by NumberController#input as HTML
+  Rendering number/input.html.erb within layouts/application
+  Rendered number/input.html.erb within layouts/application (Duration: 1.6ms | Allocations: 501)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 6c6e04423bfee815332d
+Version: webpack 4.44.2
+Time: 709ms
+Built at: 11/22/2020 11:04:19 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-f5f7b43bc20ce272913f.js    126 KiB  application  [emitted] [immutable]  application
+js/application-f5f7b43bc20ce272913f.js.map    140 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-f5f7b43bc20ce272913f.js js/application-f5f7b43bc20ce272913f.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/number.js] 2 KiB {application} [built]
+[./app/javascript/packs/application.js] 789 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'jquery' in '/home/dima/Documents/bmstu_ip/laba9/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 13:0-17
+
+Completed 200 OK in 2470ms (Views: 2463.8ms | ActiveRecord: 0.0ms | Allocations: 21469)
+
+
+Started GET "/number/view.json?number=60&commit=%D0%A0%D0%B0%D1%81%D1%81%D1%87%D0%B8%D1%82%D0%B0%D1%82%D1%8C" for 127.0.0.1 at 2020-11-22 23:04:20 +0300
+Processing by NumberController#view as JSON
+  Parameters: {"number"=>"60", "commit"=>"Рассчитать"}
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 4293)
+
+
+Started GET "/number/view.json?number=60&commit=%D0%A0%D0%B0%D1%81%D1%81%D1%87%D0%B8%D1%82%D0%B0%D1%82%D1%8C" for 127.0.0.1 at 2020-11-22 23:04:21 +0300
+Processing by NumberController#view as JSON
+  Parameters: {"number"=>"60", "commit"=>"Рассчитать"}
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 4285)
+
+
+Started GET "/number/view.json?number=60&commit=%D0%A0%D0%B0%D1%81%D1%81%D1%87%D0%B8%D1%82%D0%B0%D1%82%D1%8C" for 127.0.0.1 at 2020-11-22 23:04:29 +0300
+Processing by NumberController#view as JSON
+  Parameters: {"number"=>"60", "commit"=>"Рассчитать"}
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 4291)
+
+
+Started GET "/number/view.json?number=60&commit=%D0%A0%D0%B0%D1%81%D1%81%D1%87%D0%B8%D1%82%D0%B0%D1%82%D1%8C" for 127.0.0.1 at 2020-11-22 23:04:30 +0300
+Processing by NumberController#view as JSON
+  Parameters: {"number"=>"60", "commit"=>"Рассчитать"}
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 4295)
+
+
+Started GET "/" for 127.0.0.1 at 2020-11-22 23:05:07 +0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/dima/.rvm/gems/ruby-2.7.1/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/dima/.rvm/gems/ruby-2.7.1/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 5.2ms | Allocations: 295)
+Completed 200 OK in 11ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 1847)
+
+
+Started GET "/number/input" for 127.0.0.1 at 2020-11-22 23:05:14 +0300
+Processing by NumberController#input as HTML
+  Rendering number/input.html.erb within layouts/application
+  Rendered number/input.html.erb within layouts/application (Duration: 1.3ms | Allocations: 394)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 27ms (Views: 25.5ms | ActiveRecord: 0.0ms | Allocations: 7140)
+
+
+Started GET "/number/view.json?number=1000&commit=%D0%A0%D0%B0%D1%81%D1%81%D1%87%D0%B8%D1%82%D0%B0%D1%82%D1%8C" for 127.0.0.1 at 2020-11-22 23:05:18 +0300
+Processing by NumberController#view as JSON
+  Parameters: {"number"=>"1000", "commit"=>"Рассчитать"}
+Completed 200 OK in 354ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1004495)
+
+
+Started GET "/number/view.json?number=1000&commit=%D0%A0%D0%B0%D1%81%D1%81%D1%87%D0%B8%D1%82%D0%B0%D1%82%D1%8C" for 127.0.0.1 at 2020-11-22 23:05:20 +0300
+Processing by NumberController#view as JSON
+  Parameters: {"number"=>"1000", "commit"=>"Рассчитать"}
+Completed 200 OK in 238ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1004478)
+
+
+Started GET "/number/view.json?number=5000" for 127.0.0.1 at 2020-11-22 23:09:37 +0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by NumberController#view as JSON
+  Parameters: {"number"=>"5000"}
+Completed 200 OK in 9420ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 25020676)
+
+
+Started GET "/number/view.json" for 127.0.0.1 at 2020-11-22 23:10:22 +0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by NumberController#view as JSON
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 622)
+
+
+Started GET "/number/view" for 127.0.0.1 at 2020-11-22 23:10:26 +0300
+Processing by NumberController#view as HTML
+  Rendering number/view.html.erb within layouts/application
+  Rendered number/view.html.erb within layouts/application (Duration: 1.0ms | Allocations: 434)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 13.1ms | ActiveRecord: 0.0ms | Allocations: 7419)
+
+
+Started GET "/number/input" for 127.0.0.1 at 2020-11-22 23:10:28 +0300
+Processing by NumberController#input as HTML
+  Rendering number/input.html.erb within layouts/application
+  Rendered number/input.html.erb within layouts/application (Duration: 3.5ms | Allocations: 391)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 22.9ms | ActiveRecord: 0.0ms | Allocations: 3955)
+
+
+Started GET "/number/view.json?number=1000&commit=%D0%A0%D0%B0%D1%81%D1%81%D1%87%D0%B8%D1%82%D0%B0%D1%82%D1%8C" for 127.0.0.1 at 2020-11-22 23:10:32 +0300
+Processing by NumberController#view as JSON
+  Parameters: {"number"=>"1000", "commit"=>"Рассчитать"}
+Completed 200 OK in 281ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1004479)
+
+
+Started GET "/number/view.json?number=1000&commit=%D0%A0%D0%B0%D1%81%D1%81%D1%87%D0%B8%D1%82%D0%B0%D1%82%D1%8C" for 127.0.0.1 at 2020-11-22 23:10:34 +0300
+Processing by NumberController#view as JSON
+  Parameters: {"number"=>"1000", "commit"=>"Рассчитать"}
+Completed 200 OK in 276ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1004494)
+
+
+Started GET "/" for 127.0.0.1 at 2020-11-22 23:33:28 +0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/dima/.rvm/gems/ruby-2.7.1/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/dima/.rvm/gems/ruby-2.7.1/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 5.3ms | Allocations: 295)
+Completed 200 OK in 12ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 1853)
+
+
+Started GET "/number/input" for 127.0.0.1 at 2020-11-22 23:33:32 +0300
+Processing by NumberController#input as HTML
+  Rendering number/input.html.erb within layouts/application
+  Rendered number/input.html.erb within layouts/application (Duration: 1.6ms | Allocations: 394)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/dima/Documents/bmstu_ip/laba9/public/packs
+[Webpacker] Hash: 15d1bb7b54cf6326b9ba
+Version: webpack 4.44.2
+Time: 625ms
+Built at: 11/22/2020 11:33:34 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-9afcbb5693aa87623e69.js    124 KiB  application  [emitted] [immutable]  application
+js/application-9afcbb5693aa87623e69.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-9afcbb5693aa87623e69.js js/application-9afcbb5693aa87623e69.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 749 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 2327ms (Views: 2326.0ms | ActiveRecord: 0.0ms | Allocations: 8185)
+
+
+Started GET "/number/view.json?number=1000&commit=%D0%A0%D0%B0%D1%81%D1%81%D1%87%D0%B8%D1%82%D0%B0%D1%82%D1%8C" for 127.0.0.1 at 2020-11-22 23:33:38 +0300
+Processing by NumberController#view as JSON
+  Parameters: {"number"=>"1000", "commit"=>"Рассчитать"}
+Completed 200 OK in 357ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1004483)
+
+
+Started GET "/number/input" for 127.0.0.1 at 2020-11-22 23:33:51 +0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by NumberController#input as HTML
+  Rendering number/input.html.erb within layouts/application
+  Rendered number/input.html.erb within layouts/application (Duration: 1.0ms | Allocations: 535)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 7619)
+
+
+Started GET "/number/view.json?number=1000&commit=%D0%A0%D0%B0%D1%81%D1%81%D1%87%D0%B8%D1%82%D0%B0%D1%82%D1%8C" for 127.0.0.1 at 2020-11-22 23:33:53 +0300
+Processing by NumberController#view as JSON
+  Parameters: {"number"=>"1000", "commit"=>"Рассчитать"}
+Completed 200 OK in 299ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1004496)
+
+
+Started GET "/number/view.json?number=1000&commit=%D0%A0%D0%B0%D1%81%D1%81%D1%87%D0%B8%D1%82%D0%B0%D1%82%D1%8C" for 127.0.0.1 at 2020-11-22 23:33:55 +0300
+Processing by NumberController#view as JSON
+  Parameters: {"number"=>"1000", "commit"=>"Рассчитать"}
+Completed 200 OK in 255ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1004484)
+
+
+Started GET "/number/view.json?number=1000&commit=%D0%A0%D0%B0%D1%81%D1%81%D1%87%D0%B8%D1%82%D0%B0%D1%82%D1%8C" for 127.0.0.1 at 2020-11-22 23:34:11 +0300
+Processing by NumberController#view as JSON
+  Parameters: {"number"=>"1000", "commit"=>"Рассчитать"}
+Completed 200 OK in 229ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1004472)
+
+
