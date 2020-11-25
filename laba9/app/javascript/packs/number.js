@@ -12,3 +12,4 @@ $(document).ready(function() {
         $("#result").html("<p>Ошибка при AJAX-запросе</p>")
     })
 })
+
