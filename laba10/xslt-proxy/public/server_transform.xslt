@@ -16,7 +16,7 @@
 
 
         <xsl:if test="count(arrays/array)=0">
-          <xsl:value-of select="hash/message/text()"/>
+          <p><xsl:value-of select="hash/message/text()"/></p>
         </xsl:if>
 
         <xsl:if test="count(arrays/array)>0">

@@ -36,7 +36,7 @@
 
             <xsl:for-each select="arrays/array">
 
-              <xsl:variable name="counter" select="position()"/>
+              <p><xsl:variable name="counter" select="position()"/></p>
 
               <tbody>
 

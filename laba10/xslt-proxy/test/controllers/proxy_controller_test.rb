@@ -37,7 +37,7 @@ class ProxyControllerTest < ActionDispatch::IntegrationTest
     result = assigns[:hash]['arrays'][0].map(&:to_i)
     assert_equal result, out
 
-    n=3000
+    n = 3000
     get "#{proxy_output_url}?number=#{n}&side=server"
     out = [220,284,1184, 1210, 2620 ,2924]
     result = assigns[:hash]['arrays'].flatten.map(&:to_i)
@@ -45,9 +45,5 @@ class ProxyControllerTest < ActionDispatch::IntegrationTest
 
 
   end
-
-
-
-
 
 end
