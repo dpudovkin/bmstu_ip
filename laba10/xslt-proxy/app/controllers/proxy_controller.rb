@@ -9,13 +9,13 @@ class ProxyController < ApplicationController
   def input; end
 
   # side:
-  # 1. возвращает XML в неизменном виде;
-  # 2. превращает XML в HTML на стороне сервера (средствами Ruby);
-  # 3. превращает XML в HTML на стороне браузера.
+  # 1. XML в неизменном виде
+  # 2. XML в HTML на стороне сервера
+  # 3. XML в HTML на стороне браузера.
   def output
+
     @hash = Hash.from_xml(open(@url))
     api_response = open(@url)
-
 
     case @side
     when 'server'
@@ -26,15 +26,14 @@ class ProxyController < ApplicationController
     else
       render xml: api_response
     end
-
   end
 
   private
 
 
-  BASE_API_URL           = 'http://localhost:3000/?format=xml'.freeze
-  XSLT_SERVER_TRANSFORM  = "#{Rails.root}/public/server_transform.xslt".freeze
-  XSLT_BROWSER_TRANSFORM = '/server_transform.xslt'.freeze
+  BASE_API_URL           = 'http://localhost:3000/?format=xml'
+  XSLT_SERVER_TRANSFORM  = "#{Rails.root}/public/server_transform.xslt"
+  XSLT_BROWSER_TRANSFORM = '/server_transform.xslt'
 
   def parse_params
     @number = params[:number]

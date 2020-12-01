@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects type="array">
+  <object>
+    <number type="decimal">1000.0</number>
+    <result type="array">
+      <result type="array">
+        <result type="integer">220</result>
+        <result type="integer">284</result>
+      </result>
+    </result>
+  </object>
+  <object>
+    <number type="decimal">2000.0</number>
+    <result type="array">
+      <result type="array">
+        <result type="integer">220</result>
+        <result type="integer">284</result>
+      </result>
+      <result type="array">
+        <result type="integer">1184</result>
+        <result type="integer">1210</result>
+      </result>
+    </result>
+  </object>
+  <object>
+    <number type="decimal">2001.0</number>
+    <result type="array">
+      <result type="array">
+        <result type="integer">220</result>
+        <result type="integer">284</result>
+      </result>
+      <result type="array">
+        <result type="integer">1184</result>
+        <result type="integer">1210</result>
+      </result>
+    </result>
+  </object>
+  <object>
+    <number type="decimal">2.0</number>
+    <result type="integer">0</result>
+  </object>
+  <object>
+    <number type="decimal">5.0</number>
+    <result type="integer">0</result>
+  </object>
+  <object>
+    <number type="decimal">1001.0</number>
+    <result type="array">
+      <result type="array">
+        <result type="integer">220</result>
+        <result type="integer">284</result>
+      </result>
+    </result>
+  </object>
+</objects>

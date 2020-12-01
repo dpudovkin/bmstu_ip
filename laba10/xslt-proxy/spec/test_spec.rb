@@ -3,6 +3,7 @@ require 'selenium-webdriver'
 require 'json'
 
 describe 'essential test' do
+
   before(:each) do
     @driver = Selenium::WebDriver.for :firefox
     @vars = {}
