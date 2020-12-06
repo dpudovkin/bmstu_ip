@@ -3,7 +3,6 @@
 require 'test_helper'
 
 class NumberControllerTest < ActionDispatch::IntegrationTest
-
   test 'should get input' do
     get number_input_url
     assert_response :success
@@ -14,8 +13,8 @@ class NumberControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test 'first functional test' do
-    get number_view_url, params: {number: '300'}
+  test 'should get correct result' do
+    get number_view_url, params: { number: '300' }
     assert_res = true
     mas = [[220, 284]]
     res = assigns[:result]
@@ -30,13 +29,13 @@ class NumberControllerTest < ActionDispatch::IntegrationTest
     assert assert_res
   end
 
-  test 'second functional test' do
-    get number_view_url, params: {number: 'hdryhdd'}
+  test 'should get -1: incorrect data' do
+    get number_view_url, params: { number: 'hdryhdd' }
     assert_equal assigns[:result], -1
   end
 
-  test 'third functional test' do
-    get number_view_url, params: {number:'50'}
+  test 'should get 0: no friends number (empty result)' do
+    get number_view_url, params: { number: '50' }
     assert_equal assigns[:result], 0
   end
 end
