@@ -22,6 +22,7 @@ class NumberController < ApplicationController
       record = Number.create(num: n)
       record.values = @result
       record.save
+        
       end
     end
     respond_to do |format|
@@ -40,7 +41,7 @@ class NumberController < ApplicationController
   private
 
   def dividers_sum_with_number(number)
-    [] << number << (1..(number - 1)).to_a.select { |v| (number % v).zero? }.sum
+    [number , (1..(number - 1)).select { |v| (number % v).zero? }.sum]
   end
 
   def friends_number(n)

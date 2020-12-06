@@ -43,7 +43,6 @@ class ProxyControllerTest < ActionDispatch::IntegrationTest
     result = assigns[:hash]['arrays'].flatten.map(&:to_i)
     assert_equal result, out
 
-
   end
 
 end

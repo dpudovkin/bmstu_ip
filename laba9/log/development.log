@@ -2360,3 +2360,111 @@ Processing by NumberController#view as JSON
 Completed 200 OK in 2958ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 9012400)
 
 
+Started GET "/" for 127.0.0.1 at 2020-12-01 10:44:06 +0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/dima/.rvm/gems/ruby-2.7.1/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/dima/.rvm/gems/ruby-2.7.1/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 15.0ms | Allocations: 295)
+Completed 200 OK in 43ms (Views: 21.4ms | ActiveRecord: 0.0ms | Allocations: 1836)
+
+
+Started GET "/number/input" for 127.0.0.1 at 2020-12-01 10:44:09 +0300
+Processing by NumberController#input as HTML
+  Rendering number/input.html.erb within layouts/application
+  Rendered number/input.html.erb within layouts/application (Duration: 2.3ms | Allocations: 394)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 27ms (Views: 25.8ms | ActiveRecord: 0.0ms | Allocations: 7146)
+
+
+Started GET "/number/view.json?number=1000&commit=%D0%A0%D0%B0%D1%81%D1%81%D1%87%D0%B8%D1%82%D0%B0%D1%82%D1%8C" for 127.0.0.1 at 2020-12-01 10:45:14 +0300
+Processing by NumberController#view as JSON
+  Parameters: {"number"=>"1000", "commit"=>"Рассчитать"}
+Completed 200 OK in 423ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1004482)
+
+
+Started GET "/number/view.json?number=100&commit=%D0%A0%D0%B0%D1%81%D1%81%D1%87%D0%B8%D1%82%D0%B0%D1%82%D1%8C" for 127.0.0.1 at 2020-12-01 10:45:48 +0300
+Processing by NumberController#view as JSON
+  Parameters: {"number"=>"100", "commit"=>"Рассчитать"}
+Completed 200 OK in 16ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 10843)
+
+
+Started GET "/number/view.json?number=1200&commit=%D0%A0%D0%B0%D1%81%D1%81%D1%87%D0%B8%D1%82%D0%B0%D1%82%D1%8C" for 127.0.0.1 at 2020-12-01 10:45:58 +0300
+Processing by NumberController#view as JSON
+  Parameters: {"number"=>"1200", "commit"=>"Рассчитать"}
+Completed 200 OK in 408ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1445265)
+
+
+Started GET "/number/view.json?number=1500&commit=%D0%A0%D0%B0%D1%81%D1%81%D1%87%D0%B8%D1%82%D0%B0%D1%82%D1%8C" for 127.0.0.1 at 2020-12-01 10:46:03 +0300
+Processing by NumberController#view as JSON
+  Parameters: {"number"=>"1500", "commit"=>"Рассчитать"}
+Completed 200 OK in 556ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2256470)
+
+
+Started GET "/number/view.json?number=1500&commit=%D0%A0%D0%B0%D1%81%D1%81%D1%87%D0%B8%D1%82%D0%B0%D1%82%D1%8C" for 127.0.0.1 at 2020-12-01 10:46:50 +0300
+Processing by NumberController#view as JSON
+  Parameters: {"number"=>"1500", "commit"=>"Рассчитать"}
+Completed 200 OK in 564ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2256478)
+
+
+Started GET "/number/view.json?number=1500&commit=%D0%A0%D0%B0%D1%81%D1%81%D1%87%D0%B8%D1%82%D0%B0%D1%82%D1%8C" for 127.0.0.1 at 2020-12-01 10:47:19 +0300
+Processing by NumberController#view as JSON
+  Parameters: {"number"=>"1500", "commit"=>"Рассчитать"}
+Completed 200 OK in 524ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2256473)
+
+
+Started GET "/number/input" for 127.0.0.1 at 2020-12-01 10:49:25 +0300
+Processing by NumberController#input as HTML
+  Rendering number/input.html.erb within layouts/application
+  Rendered number/input.html.erb within layouts/application (Duration: 0.4ms | Allocations: 185)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 3447)
+
+
+Started GET "/number/view.json?number=100&commit=%D0%A0%D0%B0%D1%81%D1%81%D1%87%D0%B8%D1%82%D0%B0%D1%82%D1%8C" for 127.0.0.1 at 2020-12-01 10:49:27 +0300
+Processing by NumberController#view as JSON
+  Parameters: {"number"=>"100", "commit"=>"Рассчитать"}
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 10759)
+
+
+Started GET "/number/input" for 127.0.0.1 at 2020-12-01 10:49:33 +0300
+Processing by NumberController#input as HTML
+  Rendering number/input.html.erb within layouts/application
+  Rendered number/input.html.erb within layouts/application (Duration: 0.3ms | Allocations: 183)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms | Allocations: 3429)
+
+
+Started GET "/number/view.json?number=sflhb&commit=%D0%A0%D0%B0%D1%81%D1%81%D1%87%D0%B8%D1%82%D0%B0%D1%82%D1%8C" for 127.0.0.1 at 2020-12-01 10:49:35 +0300
+Processing by NumberController#view as JSON
+  Parameters: {"number"=>"sflhb", "commit"=>"Рассчитать"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 335)
+
+
+Started GET "/number/input" for 127.0.0.1 at 2020-12-01 10:49:42 +0300
+Processing by NumberController#input as HTML
+  Rendering number/input.html.erb within layouts/application
+  Rendered number/input.html.erb within layouts/application (Duration: 0.3ms | Allocations: 183)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms | Allocations: 3429)
+
+
+Started GET "/number/view.json?number=1000&commit=%D0%A0%D0%B0%D1%81%D1%81%D1%87%D0%B8%D1%82%D0%B0%D1%82%D1%8C" for 127.0.0.1 at 2020-12-01 10:49:44 +0300
+Processing by NumberController#view as JSON
+  Parameters: {"number"=>"1000", "commit"=>"Рассчитать"}
+Completed 200 OK in 218ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1004363)
+
+
+Started GET "/number/input" for 127.0.0.1 at 2020-12-01 10:49:51 +0300
+Processing by NumberController#input as HTML
+  Rendering number/input.html.erb within layouts/application
+  Rendered number/input.html.erb within layouts/application (Duration: 0.6ms | Allocations: 183)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms | Allocations: 3429)
+
+
+Started GET "/number/view.json?number=3000&commit=%D0%A0%D0%B0%D1%81%D1%81%D1%87%D0%B8%D1%82%D0%B0%D1%82%D1%8C" for 127.0.0.1 at 2020-12-01 10:49:53 +0300
+Processing by NumberController#view as JSON
+  Parameters: {"number"=>"3000", "commit"=>"Рассчитать"}
+Completed 200 OK in 3568ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 9012385)
+
+
